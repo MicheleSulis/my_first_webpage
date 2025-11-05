@@ -36,7 +36,9 @@ body,
     color: #F9FAF8;
 }
 
-.logo {
+.logo,
+.author,
+.banner-header {
     font-size: 24px;
     font-weight: bold;
     color: #F9FAF8;
@@ -45,7 +47,8 @@ body,
 .links,
 .secondary-text,
 .footer,
-button {
+button,
+.banner-text {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -71,7 +74,7 @@ button {
     border: 0;
 }
 
-.call-to-action,
+.box,
 button {
     background-color: #3882F6;
 }
@@ -143,4 +146,44 @@ img {
     text-align: center;
     align-items: center;
     gap: 10px;
+}
+
+.quote {
+    flex-direction: column;
+    padding: 120px 400px;
+}
+
+.author {
+    color: #1F2937;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.box>button {
+    border: 2px solid #F9FAF8;
+}
+
+.call-to-action {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+}
+
+.hero>img {
+    border-radius: 10px;
+}
+
+.box {
+    flex-grow: 1;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.footer {
+    padding: 38px 0;
 }
